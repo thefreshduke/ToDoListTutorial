@@ -9,7 +9,15 @@
 import UIKit
 
 class NewToDoItemViewController: UIViewController {
-
+    
+    @IBOutlet weak var inputField: UITextField!
+    
+    @IBAction func addNewToDoItem(sender: AnyObject) {
+        let newToDoItem = inputField.text!
+        
+        data.append(newToDoItem)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

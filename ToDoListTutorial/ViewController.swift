@@ -8,11 +8,11 @@
 
 import UIKit
 
+var data: [String] = [String]()
+
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var toDoTable: UITableView!
-    
-    var data: [String] = ["The Fresh Prince", "The Most Interesting Man In The World", "The Fresh Duke"]
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = self.toDoTable.dequeueReusableCellWithIdentifier("default", forIndexPath: indexPath)

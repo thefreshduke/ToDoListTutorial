@@ -20,7 +20,13 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Rb-sZ-Lf2">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <items>
-                                    <navigationItem title="To Do" id="c9d-iq-16f"/>
+                                    <navigationItem title="To Do" id="c9d-iq-16f">
+                                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="add" id="OLh-cf-P4M">
+                                            <connections>
+                                                <segue destination="gc2-86-lkg" kind="show" id="Knj-Fw-Jq5"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2gZ-ap-YvN">
@@ -99,6 +105,9 @@
                                     <constraint firstAttribute="width" constant="106" id="el4-Tz-vgV"/>
                                 </constraints>
                                 <state key="normal" title="Add To Do Item"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="fOj-qF-WsS"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

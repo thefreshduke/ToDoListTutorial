@@ -61,10 +61,10 @@
             </objects>
             <point key="canvasLocation" x="378" y="339"/>
         </scene>
-        <!--View Controller-->
+        <!--New To Do Item View Controller-->
         <scene sceneID="nd0-g3-RVE">
             <objects>
-                <viewController id="gc2-86-lkg" sceneMemberID="viewController">
+                <viewController id="gc2-86-lkg" customClass="NewToDoItemViewController" customModule="ToDoListTutorial" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TQn-wp-yJ1"/>
                         <viewControllerLayoutGuide type="bottom" id="zFs-B9-GoQ"/>

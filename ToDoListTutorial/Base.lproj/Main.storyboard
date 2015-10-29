@@ -89,15 +89,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PP0-Sx-8zZ">
-                                <rect key="frame" x="116" y="131" width="368" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="59m-og-Ts7"/>
-                                    <constraint firstAttribute="width" constant="368" id="YbI-8c-ZHd"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Tz-iN-bcq">
                                 <rect key="frame" x="247" y="306" width="106" height="30"/>
                                 <constraints>
@@ -109,6 +100,17 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="fOj-qF-WsS"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PP0-Sx-8zZ">
+                                <rect key="frame" x="156" y="131" width="289" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="289" id="0gn-ug-ApG"/>
+                                    <constraint firstAttribute="height" constant="30" id="59m-og-Ts7"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="AP5-rC-c6W"/>
+                                    <constraint firstAttribute="width" constant="368" id="YbI-8c-ZHd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -118,6 +120,8 @@
                             <constraint firstItem="PP0-Sx-8zZ" firstAttribute="top" secondItem="7NL-Ck-Rds" secondAttribute="bottom" constant="48" id="HyV-eF-qjj"/>
                             <constraint firstItem="7Tz-iN-bcq" firstAttribute="top" secondItem="PP0-Sx-8zZ" secondAttribute="bottom" constant="145" id="VEp-nG-ndF"/>
                             <constraint firstItem="7NL-Ck-Rds" firstAttribute="top" secondItem="TQn-wp-yJ1" secondAttribute="bottom" constant="42" id="evG-Iz-Iqh"/>
+                            <constraint firstItem="PP0-Sx-8zZ" firstAttribute="centerX" secondItem="NPe-tk-sLN" secondAttribute="centerX" id="itH-Pj-7fD"/>
+                            <constraint firstItem="PP0-Sx-8zZ" firstAttribute="top" secondItem="7NL-Ck-Rds" secondAttribute="bottom" constant="48" id="vsc-ea-Q0e"/>
                         </constraints>
                     </view>
                 </viewController>

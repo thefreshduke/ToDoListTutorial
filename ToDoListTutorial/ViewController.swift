@@ -25,6 +25,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
     }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == .Delete {
+            data.removeAtIndex(indexPath.row)
+            
+            NSUserDefaults.standardUserDefaults().setObject(data, forKey: "data")
+            
+            self.toDoTable.reloadData()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

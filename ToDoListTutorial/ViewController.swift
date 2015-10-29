@@ -29,6 +29,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        if NSUserDefaults.standardUserDefaults().objectForKey("data") != nil {
+            data = NSUserDefaults.standardUserDefaults().objectForKey("data") as! [String]
+        }
     }
 
     override func didReceiveMemoryWarning() {

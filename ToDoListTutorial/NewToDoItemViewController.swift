@@ -16,6 +16,8 @@ class NewToDoItemViewController: UIViewController {
         let newToDoItem = inputField.text!
         
         data.append(newToDoItem)
+        
+        NSUserDefaults.standardUserDefaults().setObject(data, forKey: "data")
     }
     
     override func viewDidLoad() {

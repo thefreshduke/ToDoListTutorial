@@ -79,51 +79,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New To Do Item" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7NL-Ck-Rds">
-                                <rect key="frame" x="170" y="62" width="260" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="M9P-dS-ffD"/>
-                                    <constraint firstAttribute="width" constant="260" id="ONn-S3-coK"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Tz-iN-bcq">
                                 <rect key="frame" x="247" y="306" width="106" height="30"/>
                                 <state key="normal" title="Add To Do Item"/>
                                 <connections>
+                                    <action selector="addNewToDoItem:" destination="gc2-86-lkg" eventType="touchUpInside" id="zeu-lj-QET"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="fOj-qF-WsS"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PP0-Sx-8zZ">
                                 <rect key="frame" x="150" y="169" width="301" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="8B1-hd-nac"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="301" id="Eek-9k-TTX"/>
-                                    <constraint firstAttribute="width" constant="301" id="jED-NM-mmi"/>
+                                    <constraint firstAttribute="height" constant="30" id="TYC-aw-rBs"/>
+                                    <constraint firstAttribute="width" constant="301" id="kEz-GY-AgA"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New To Do Item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHS-5Z-LLA">
+                                <rect key="frame" x="239" y="60" width="122" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="B1Q-O0-GYj"/>
+                                    <constraint firstAttribute="width" constant="122" id="RGc-td-Ayu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="7NL-Ck-Rds" firstAttribute="top" secondItem="TQn-wp-yJ1" secondAttribute="bottom" constant="42" id="AWd-Gb-3vg"/>
-                            <constraint firstItem="PP0-Sx-8zZ" firstAttribute="centerX" secondItem="7NL-Ck-Rds" secondAttribute="centerX" id="Dna-n6-th8"/>
-                            <constraint firstItem="zFs-B9-GoQ" firstAttribute="top" secondItem="7Tz-iN-bcq" secondAttribute="bottom" constant="264" id="LdL-jO-g7w"/>
-                            <constraint firstItem="7NL-Ck-Rds" firstAttribute="leading" secondItem="NPe-tk-sLN" secondAttribute="leadingMargin" constant="150" id="VvI-b4-IB3"/>
-                            <constraint firstItem="7Tz-iN-bcq" firstAttribute="centerX" secondItem="NPe-tk-sLN" secondAttribute="centerX" id="isg-4O-YLR"/>
-                            <constraint firstItem="7Tz-iN-bcq" firstAttribute="top" secondItem="PP0-Sx-8zZ" secondAttribute="bottom" constant="107" id="nxo-FV-lsb"/>
-                            <constraint firstItem="7NL-Ck-Rds" firstAttribute="top" secondItem="TQn-wp-yJ1" secondAttribute="bottom" constant="42" id="rkO-6z-eWB"/>
-                            <constraint firstItem="7Tz-iN-bcq" firstAttribute="centerX" secondItem="PP0-Sx-8zZ" secondAttribute="centerX" id="tQD-5z-Uqd"/>
-                            <constraint firstItem="PP0-Sx-8zZ" firstAttribute="top" secondItem="7NL-Ck-Rds" secondAttribute="bottom" constant="86" id="ucg-17-0PU"/>
-                            <constraint firstItem="7NL-Ck-Rds" firstAttribute="centerX" secondItem="NPe-tk-sLN" secondAttribute="centerX" id="vDE-R3-M5c"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="7NL-Ck-Rds" secondAttribute="trailing" constant="150" id="vgI-v2-dk4"/>
-                            <constraint firstItem="PP0-Sx-8zZ" firstAttribute="top" secondItem="7NL-Ck-Rds" secondAttribute="bottom" constant="86" id="yhA-rn-2FM"/>
-                            <constraint firstItem="PP0-Sx-8zZ" firstAttribute="centerX" secondItem="NPe-tk-sLN" secondAttribute="centerX" id="zJj-o7-0Pg"/>
+                            <constraint firstItem="PP0-Sx-8zZ" firstAttribute="centerX" secondItem="NPe-tk-sLN" secondAttribute="centerX" id="IJG-tK-sn5"/>
+                            <constraint firstItem="dHS-5Z-LLA" firstAttribute="top" secondItem="TQn-wp-yJ1" secondAttribute="bottom" constant="40" id="JeE-VB-wdk"/>
+                            <constraint firstItem="dHS-5Z-LLA" firstAttribute="centerX" secondItem="NPe-tk-sLN" secondAttribute="centerX" id="UBT-ag-xha"/>
+                            <constraint firstItem="PP0-Sx-8zZ" firstAttribute="top" secondItem="dHS-5Z-LLA" secondAttribute="bottom" constant="88" id="YwK-CD-fnk"/>
+                            <constraint firstItem="7Tz-iN-bcq" firstAttribute="centerX" secondItem="NPe-tk-sLN" secondAttribute="centerX" id="Z5U-Kz-dIn"/>
+                            <constraint firstItem="7Tz-iN-bcq" firstAttribute="top" secondItem="PP0-Sx-8zZ" secondAttribute="bottom" constant="107" id="hTx-Mu-nXf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="inputField" destination="PP0-Sx-8zZ" id="Ju7-zi-Zqn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hpA-d6-SCY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
